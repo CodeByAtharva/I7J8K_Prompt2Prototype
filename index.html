@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashCard Generator</title>
+    <title>Flashcard Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>🧠 AI Flashcard Generator</h1>
+        <p>Paste your study material below, and let the AI create flashcards for you!</p>
+        <textarea id="studyMaterial" placeholder="Paste your notes or text here..."></textarea>
+        <button id="generateBtn">Generate Flashcards</button>
+        <div id="loading" class="hidden">
+            <p>Generating flashcards...</p>
+        </div>
+        <div id="flashcardContainer">
+            </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
