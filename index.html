@@ -4,24 +4,28 @@
   <meta charset="utf-8" />
   <title>Flashcard Generator (Gemini)</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    
-  </style>
 </head>
 <body>
   <h1>⚡ Gemini Flashcard Generator</h1>
 
+  <!-- Paste or Upload -->
   <textarea id="inputText" placeholder="Paste your study material here..."></textarea>
   <br>
+  <input type="file" id="fileInput" accept=".txt,.pdf">
+  <br><br>
+
+  <!-- Buttons -->
   <button id="generateBtn">Generate Flashcards</button>
+  <button id="analyzeBtn">Analyze & Suggest Books</button>
   <span id="status"></span>
 
+  <!-- Results -->
+  <div id="summary"></div>
   <div id="cardsContainer"></div>
+  <div id="bookSuggestions"></div>
 
+  <!-- PDF.js for PDF parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
   <script src="script.js"></script>
-<script>
-
-
-</script>
 </body>
 </html>
